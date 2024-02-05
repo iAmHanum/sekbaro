@@ -1,0 +1,521 @@
+
+
+			[lang="en"] {
+				display: none !important; /* Initially hide elements with lang="en" */
+			}
+
+/*font*/
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: normal; /* Replace with the desired font weight */
+    font-style: normal;
+  }
+
+
+
+/*
+* Header
+
+#header {
+    position: relative;
+    width: 100%;
+    top: calc(100vh - 78px);
+    left: 0;
+    height: 78px;
+}*/
+
+#header {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 78px !important; /*To change the height of the homepage screen in accordance to the header*/
+  
+}
+
+
+#header .header-btn-collapse-nav {
+    margin-top: 4px;
+}
+
+#header .container {
+    width: 100%;
+}
+
+#header .header-body {
+    background: rgba(0, 0, 0, 0.4);
+    border-top: 0;
+    border-bottom: 0;
+    min-height: 0;
+    top: 0 !important;
+}
+
+#header .header-container {
+    height: 70px;
+}
+
+#header .header-nav {
+    padding: 0;
+}
+
+#header .header-nav-main:before {
+    content: none;
+}
+
+#header .header-nav-main nav > ul > li > a {
+    position: relative;
+    background: transparent !important;
+    font-size: 13.6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0;
+    color: var(--light) !important;
+    transition: ease color 300ms;
+}
+
+@media (min-width: 992px) and (max-width: 1060px) {
+    #header .header-nav-main nav > ul > li > a {
+            padding: 27px 7px;
+    }
+}
+
+@media (min-width: 1061px) and (max-width: 1199px) {
+    #header .header-nav-main nav > ul > li > a {
+            padding: 27px 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #header .header-nav-main nav > ul > li > a {
+            padding: 27px 16px;
+    }
+}
+
+#header .header-nav-main nav > ul > li > a.active:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid var(--grey-500);
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+    #header .header-nav-main nav > ul > li > a.active:before {
+            bottom: 0;
+            border-width: 2px;
+    }
+}
+
+#header .header-nav-main nav > ul li {
+    border-bottom: 0;
+}
+
+html.sticky-header-active #header .header-body {
+    top: 0;
+    background: var(--quaternary);
+    border-bottom-color: var(--quaternary);
+}
+
+@media (max-width: 991px) {
+    html:not(.sticky-header-active) #header .header-body {
+            background: var(--quaternary);
+            border-bottom-color: var(--quaternary);
+    }
+}
+
+@media (min-width: 992px) {
+    #header .header-nav-main nav > ul > li > a {
+            height: 100%;
+    }
+    #header .header-nav-main nav > ul > li > a.active {
+            color: var(--grey-500) !important;
+    }
+    #header .header-nav-main nav > ul > li:hover > a, #header .header-nav-main nav > ul > li.open > a {
+            color: var(--primary) !important;
+    }
+}
+
+
+/*header logo
+*/
+
+.header-logo {
+    padding-right: 0 !important;
+}
+
+.w-lg-25pct{
+    width: 20% !important;
+}
+
+/*
+ * navigation
+*/
+
+#mainNav li:last-child a {
+    padding-left: 30px;
+    
+}
+
+
+/*section homepage*/
+
+#img_homePage_1 {
+    
+    height: 30em;
+    margin-top: 15%;
+    
+}
+@media screen and (max-width: 767px) {
+    /* Adjustments for small screens, such as phones */
+    #img_homePage_1 {
+    
+        max-width: 100%;
+        height: auto;
+        margin-top: 0;
+    }
+}
+
+
+
+    .owl-item .col-lg-7 h1 {
+        font-size: 5em !important ;/* Adjust the size as needed */
+        padding-top: 1.2em;
+        font-weight: 700 !important;
+        font-family: 'Montserrat', Arial, sans-serif !important;
+      
+        
+    }
+
+    @media screen and (max-width: 767px) {
+        /* Adjustments for small screens, such as phones */
+        .owl-item .col-lg-7 h1 {
+            font-size: 3.5em !important ;/* Adjust the size as needed */
+            color: #fffff5 !important;
+            
+        }
+
+    
+    }
+
+    @media screen and (max-width: 992px){
+        .owl-item .col-lg-5 {
+            width: 40%;
+            margin-left: 30em;
+            padding-bottom: 20em;
+            
+
+        }
+        .owl-item .col-lg-5 img{
+            display: none
+        }
+
+        
+
+        .owl-item .col-lg-7 h1{
+            padding-top: 4em;
+        }
+
+    }
+
+.thumb-info-wrapper img {
+   
+    height: 25em;
+    object-fit: cover;
+}
+
+
+/*
+perihal*/
+
+
+
+.container.py-4{
+padding-top: 6em !important;
+}
+#who-we-are{
+    padding: 0;
+}
+
+div.col-lg-12.pe-lg-5.mb-5.mb-lg-0 {
+    
+  margin-bottom: 10px !important;
+}
+
+/*inisiatif dan program
+*/
+
+.col-lg-6 .d-flex{
+
+    border: 3px solid rgba(234, 204, 167, 0.5);
+    padding: 0.5em;
+    border-radius: 15px;
+
+}
+
+
+
+.col-lg-6:nth-of-type(2) div.d-flex {
+    padding-bottom: 6px;
+}
+
+
+
+div.col-lg-6{
+    padding-bottom: 4em;
+    padding-top: 1em;
+}
+.mb-4 a{
+    color: black;
+}
+
+div.ms-4 p.mb-4 {
+    margin-bottom: 10px !important;
+}
+
+.hover-text-color:hover {
+    color: rgb(42, 17, 17) !important; /* Change color to whatever you want */
+}
+
+
+@media screen and (max-width: 992px){
+
+    #what-we-do .col-lg-6:first-of-type {
+        margin-bottom: 0 !important;
+        padding-bottom: 0;
+    }
+    
+
+};
+    
+
+/*
+social icons*/
+
+.social-icons.social-icons-medium li a, .social-icons.social-icons-md li a {
+    height: 63px;
+    line-height: 33px;
+    width: 66px;
+    font-size: 14.4px;
+    font-size: 1.5rem;
+}
+
+.social-icons.social-icons-icon-light.social-icons-clean li a i {
+    padding-top: 15px;
+    font-size: 1.5em;
+}
+
+i.fa-solid.fa-hand-holding-dollar,
+i.fa-solid.fa-handshake-angle{
+   font-size: 4em;
+}
+
+/*
+impak sosial*/
+
+
+section.section.section-height-3{
+    padding: 1rem 1rem 2.5rem 1rem;
+}
+
+.container.py-3 h3.text-uppercase.text-center.text-color-light{
+    font-family: 'Montserrat', Arial, sans-serif !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.3em;
+    line-height: 80px;
+    font-size: 3em;
+
+    
+}
+
+@media screen and (max-width:768px){
+    .container.py-3 h3.text-uppercase.text-center.text-color-light{
+        font-size: 2em;
+        margin-bottom: 10px;
+    } 
+}
+#laporanText{
+    padding-top: 2em;
+    opacity: 1 !important;
+}
+
+div.counter a{
+    color: black;
+}
+
+div.counter a:hover{
+    color:white;
+    opacity: 1;
+    
+}
+@media screen and (min-width:992px) and (max-width:1199px){
+
+
+.section-height-3 .counters .col-sm-6.col-lg-3,
+.section-height-3 .counters .col-sm-6.col-lg-3,
+.section-height-3 .counters .col-sm-6.col-lg-3,
+.section-height-3 .counters .col-sm-6.col-lg-3    {
+    width: 13em;
+}
+}
+
+@media screen and (min-width:1200px) {
+    .section-height-3 .counters .col-sm-6.col-lg-3    {
+             width: 16em;
+}
+}
+
+@media screen and (max-width:991px){
+    .section-height-3 .counters .col-sm-6.col-lg-3:last-child{
+        padding-top: 2.5em;
+        
+    }
+}
+
+/*section projek kelestarian*/
+
+
+div.card-body a.btn{
+    background-color: var(--primary) !important;
+    background-image: linear-gradient(to right, var(--primary) 0%, var(--secondary) 100%) !important;
+
+}
+
+@media screen and (max-width:767px){
+    #Kelestarian{
+        padding-top: 0 ;
+        padding-bottom: 0 ;
+    }
+}
+.row-gutter-sm div.col-lg-4{
+    width:28em;
+    
+}
+
+div.card-body h4.card-title p.text-color-dark {
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width:767px) {
+    .row-gutter-sm .col-lg-4 {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+    div.card-body a.lightbox{
+        display: none;
+      
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    .row-gutter-sm .col-lg-4{
+        width: 30em !important;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1400px){
+    .row-gutter-sm .col-lg-4 {
+        width: 35em !important;
+        padding-bottom: 25px;
+    }
+}
+
+
+/*
+.bg-gradient{
+   background-color:  #9aa45f !important;
+   background-image: none !important;
+}
+*/
+
+/*section organisasi komuniti*/
+
+#organisasi .owl-carousel .owl-item img {
+    width: 100%;
+    margin: 0 auto;
+ 
+}
+
+@media screen and (min-width: 770px) and (max-width:1340px) {
+    div.owl-carousel.owl-drag div.owl-item {
+   
+}
+}
+
+.alternative-font-4{
+    font: 'Montserrat', Arial, sans-serif !important;
+}
+/*section logo*/
+
+
+
+#sokongan{
+    padding-bottom: 1.5em;
+    margin-bottom: 0;
+    
+}
+#logo{
+    width: 13em;
+    height: auto;
+}
+
+
+/* hubungi */
+
+
+
+/*mapping*/
+
+#imgMapping{
+    max-width: 200%;
+    background-color: #9aa45f;
+}
+
+@media screen and (max-width: 1024px) {
+    /* Adjustments for small screens, such as phones */
+    #imgMapping{
+    
+        max-width: 100%;
+        height: auto;
+        margin-top: 0;
+    }
+}
+
+
+/*Testimonials*/
+
+section.section.border-0.m-0.p-0{
+    background-color: var(--primary) !important;
+    background-image: linear-gradient(to right, var(--primary) 0%, var(--secondary) 100%) !important;
+
+}
+
+/*footer*/
+
+#footer{
+    margin-top: 0;
+}
+
+
+div.py-2 div.row.py-4{
+   
+    padding-bottom:0 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
